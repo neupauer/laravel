@@ -65,6 +65,17 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
         ],
 
+        'b2' => [
+            'driver' => 's3',
+            'key' => env('BACKBLAZE_KEY_ID'),
+            'secret' => env('BACKBLAZE_APPLICATION_KEY'),
+            'region' => env('BACKBLAZE_REGION'),
+            'bucket' => env('BACKBLAZE_BUCKET'),
+            'url' => env('BACKBLAZE_URL'),
+            'endpoint' => env('BACKBLAZE_ENDPOINT'),
+            'visibility' => env('BACKBLAZE_VISIBILITY'),
+        ],
+
     ],
 
     /*
